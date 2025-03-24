@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Dark Patterns</title>
+</head>
+<body class="body">
+<div class="sale-container">
+    <img class="sale-close-icon" src="assets/close-icon.svg" alt="Extraordinarily Faint Close Icon" onclick="closeElement('.sale-container')" />
+    <div class="sale-text">
+        <h3 class="sale-message">HURRY! Buy a subscription now! Sale ends in:</h3>
+        <h2 class="sale-timer" id="sale-timer">10:00 min</h2> <!-- timer connects with JavaScript -->
+    </div>
+    <!--<div class="progress-bar"></div>-->
+</div>
+<!--<div class="chat-container">-->
+<!--    <div class="chat-popup">-->
+<!--        <p>Hey there! 👋&nbsp;Would you like to download our audio version of this article?</p>-->
+<!--        <div>-->
+<!--            <button class="cancel-btn">Cancel</button>-->
+<!--            <button class="download-btn">Download</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="chat-icon">-->
+<!--        <img class="chat-img" src="assets/chat-icon.svg" alt="Chat Icon" />-->
+<!--    </div>-->
+<!--</div>-->
+<div class="cookie-container">
+    <h2 class="cookie-title">Would you like to disable cookies?</h2>
+    <div class="side-btns">
+        <p class="cookie-refuse"><u>Yes. Show me how.</u></p>
+        <button class="cookie-allow" onclick="closeElement('.cookie-container')">Allow All</button>
+    </div>
+</div>
+<div class="popup-container">
+    <p class="comic-sans-lmao">Do you want to continue reading and access two more articles for free?</p>
+    <div class="side-btns-nogap">
+        <button class="cancel-btn" onClick="closeElement('.popup-container')">No. I hate puppies</button>
+        <button class="download-btn" onClick="closeElement('.popup-container')">Yes! I love free stuff!</button>
+    </div>
+</div>
+<!--<div class="ad-container">-->
+<!--    <img class="ad-img" src="assets/ad.png" alt="Fake Advertisement" />-->
+<!--</div>-->
+<!--<div class="popup-container low">-->
+<!--    <p class="comic-sans-lmao">Hello stranger! We just released an email list. Would you like to join the list and gain access to exclusive content?</p>-->
+<!--    <div class="side-btns">-->
+<!--        <button class="cancel-btn">No. I won’t not refrain from not subscribing to this email list</button>-->
+<!--        <button class="download-btn">Yes. I’d would not love to not sign up never.</button>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="article-container">
+    <h1><i>The Psychological Manipulation of Dark Patterns</i></h1>
+    <!--<img src="dark-patterns.png" alt="Dark Patterns Logo" />-->
+    <!--<h6 class="caption">Caption for image</h6>-->
+    <h4>By Charlie Miller</h4>
+    <p class="article-text">
+        There are over 1.1 billion websites on the Internet. Assuming website creators wish to monetize their platform, the attention of any viewers suddenly has a monetary value, as competition for it is fierce. Some platforms, such as Instagram and TikTok have chosen to develop costly machine learning algorithms to retain the attention of users on their platform for more ad impressions. Other developers who rely on subscriptions may choose a more nefarious solution to this problem. They use dark patterns, which are user interface elements that are intentionally designed to psychologically manipulate users into performing particular actions on a platform. But what forms can these “patterns” take? How can you recognize these UI elements and combat them? Here, we’ll highlight specific dark patterns to equip you with the tools to recognize and fight against them.
+
+Dark patterns take many shapes, but there are a few categories of general patterns that unethical designers will employ in their products. One such example is “confirmshaming”. This is the practice of designers deceptively guilting the user out of confirming an action that goes against the platform’s intent. For instance, when opting out of email subscriptions, a company that relies on such subscriptions may try to prevent users from unsubscribing by mentioning how many deals they’re missing out on by leaving. This can have the effect of manipulating users into retaining their subscription when they otherwise would not have.
+
+Another dark pattern is “digital nudging”, although I concede this is a very general category that can apply to many dark patterns. Digital nudging employs UI elements to subtly convince users to perform desirable actions on a platform. One such example could be websites that have an extremely large and bold “download” button while the “cancel” button is more hidden in a smaller font. Users’ eyes would be immediately drawn to the “download” button, which may subtly convince them to download the item. Another would be social proof, or the usage of a bandwagon effect to convince users to proceed with an action.
+
+It’s important to note that dark patterns have varying levels of effectiveness. Based on experiments run by <a href="https://academic.oup.com/jla/article/13/1/43/6180579">Jamie Luguri and Lior Jacob Strahilevitz</a>, hidden information, social proof, and trick questions were effective in guiding consumer behavior.
+
+With these specific examples, hopefully it is more clear to you what dark patterns generally do. In fact, this article has some dark patterns scattered throughout. Some are extremely obvious, while others are more subtle. After we discuss how to be alert for dark patterns on the Internet, I’ll reveal all the patterns that are present here. See how many you can find on your own!
+
+To act against dark patterns, education and wariness is important. In general, it is good practice to be wary of user interface elements that try to immediately attract your attention above everything else on a platform. This is generally a sign that a dark pattern is being implemented. In addition, if you notice any UI elements that try to put you into more of a panic, or try to get you to impulsively do or buy something, it's important to step back and acknowledge the ulterior motives of the web developer. Sometimes, websites will have banners declaring “flash sales” of 60% off that appear to end in 15 minutes, but refreshing the page may yield that the countdown resets. This is a good sign that the designer intentionally wishes for users to impulsively buy the company’s product.
+
+Ultimately, though, I do admit it is extremely difficult to be wary of all dark patterns. Some can be very obvious, such as those flash sale banners I mentioned earlier. Others, such as checkboxes having pre-selected options that favor the company, are much more subtle and clever. I do hope though that you are more aware of a few forms these elements can take, and I hope you can explore the Internet safely without inadvertently submitting to a web platform’s desire for your attention and money.
+
+Now, though, I’ll list all the dark patterns I have built into this webpage. Some elements will have multiple dark patterns each. See how many you noticed!
+</p>
+<h4>“Sale” Banner</h4>
+<p class="article-text">This element proclaims a sale is ending in 10 minutes and urges the user to act quickly, but is a complete lie. Refreshing the page will reset the countdown.
+A small yellow “X” button is visible, but it is very small and blends in with the background of the banner, making it difficult to remove</p>
+<h4>Cookie Popup</h4>
+<p class="article-text">This dark pattern is more subtle, since many websites employ cookie popups to allow users to customize their cookie count. In this instance, the “Allow All” button is much larger and more bold than the “Yes. Show me how.” button.When you click into the “Yes. Show me how.” button, a long list of cookies are displayed to the user, intentionally trying to overwhelm them with choices. While most in this case are nonsense, companies may be more clever about how they choose to implement this. An extremely subtle dark pattern is also present, being that every single option is automatically pre-selected by default, forcing the user to manually uncheck each option if they wish to save their cookie preferences.</p>
+<h4>"Continue Reading" Button</h4>
+<p class="article-text">This employs a similar dark pattern to the cookie popup, where the “Yes! I love free stuff!” button is more bold than the alternative.
+However, this popup includes “digital nudging” by the messages in each button. They are intended to nudge the user into confirming this action. On this particular page, both buttons do the same thing and close the popup, but real websites will not do this.
+It's important to note as well that confirmshaming is a key component of this instance of digital nudging. Here, the popup tries to guilt the user out of saying no by tying the message with hating puppies.
+</p>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

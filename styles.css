@@ -1,0 +1,174 @@
+.body {
+    background-color: #FFFBF5;
+    color: #59473E;
+    padding: 0;
+    margin: 0;
+}
+
+.article-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 50%;
+    text-align: center;
+}
+
+.article-text {
+    text-align: left;
+    white-space: pre-line;
+}
+
+/* Dark Pattern Styles */
+.sale-container {
+    background-color: #FFEE00;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 5;
+}
+.sale-close-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.sale-text {
+    display: flex;
+    font-family: Impact sans-serif;
+    padding-left: 40px;
+}
+.sale-message {
+    color: #3F26CB;
+    font-size: 40px;
+}
+.sale-timer {
+    color: #00EDAE;
+    font-size: 60px;
+    height: 20px;
+    text-wrap: nowrap;
+}
+.progress-bar {
+    width: 80%; /* This should change dynamically way faster than "10 minutes" */
+    height: 20px;
+    background-color: #D32727;
+}
+
+.chat-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.chat-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #4AD25A;
+    cursor: pointer;
+}
+.chat-popup {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    /*white-space: pre-line;*/
+}
+
+.cookie-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #958177;
+    border-radius: 12px;
+    max-width: 20%;
+    padding: 10px;
+    font-family: Avenir, sans-serif;
+    color: white;
+}
+.cookie-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.cookie-refuse {
+    font-size: 12px;
+    cursor: pointer;
+}
+.cookie-allow {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-container {
+    width: 40%;
+    border-radius: 12px;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    padding: 20px;
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.cancel-btn {
+    padding: 20px;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    font-family: "Comic Sans MS", serif;
+    font-size: 16px;
+    color: #EAEAEA;
+    cursor: pointer;
+}
+.download-btn {
+    padding: 20px;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    background-color: #5EB1FF;
+    font-family: "Comic Sans MS", serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.side-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.side-btns-nogap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: Avenir, "Times New Roman", sans-serif;
+    text-align: left;
+}
+
+h6 {
+    font-family: Avenir, "Times New Roman", sans-serif;
+    color: #958177;
+    text-align: left;
+}
+
+p {
+    font-family: Avenir, "Times New Roman", sans-serif;
+}
