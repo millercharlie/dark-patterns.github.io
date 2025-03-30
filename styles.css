@@ -48,37 +48,9 @@
     text-wrap: nowrap;
 }
 .progress-bar {
-    width: 80%; /* This should change dynamically way faster than "10 minutes" */
+    width: 100%; /* This should change dynamically way faster than "10 minutes" */
     height: 20px;
     background-color: #D32727;
-}
-
-.chat-container {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    width: 200px;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.chat-icon {
-    width: 75px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    background-color: #4AD25A;
-    cursor: pointer;
-}
-.chat-popup {
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    /*white-space: pre-line;*/
 }
 
 .cookie-container {
@@ -114,11 +86,26 @@
     width: 40%;
     border-radius: 12px;
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 27%;
     padding: 20px;
     background-color: #D9D9D9;
     color: black;
+}
+
+.cookie-secondary-container {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    background-color: #958177;
+    border-radius: 12px;
+    max-width: 20%;
+    padding: 10px;
+    font-family: Avenir, sans-serif;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cancel-btn {
@@ -128,6 +115,15 @@
     font-family: "Comic Sans MS", serif;
     font-size: 16px;
     color: #EAEAEA;
+    cursor: pointer;
+}
+.cancel-btn-dark {
+    padding: 20px;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    font-family: "Comic Sans MS", serif;
+    font-size: 16px;
+    color: #646464;
     cursor: pointer;
 }
 .download-btn {
@@ -150,6 +146,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.low {
+    top: 160%;
 }
 
 h1 {
@@ -171,4 +176,11 @@ h6 {
 
 p {
     font-family: Avenir, "Times New Roman", sans-serif;
+}
+
+ul {
+    display: block;
+}
+li {
+    list-style-type: none;
 }

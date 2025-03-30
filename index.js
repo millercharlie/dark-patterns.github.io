@@ -3,6 +3,10 @@ const closeElement = (selector) => {
   const element = document.querySelector(selector);
   element.style.display = 'none';
 }
+const openElement = (selector) => {
+    const element = document.querySelector(selector);
+    element.style.display = 'flex';
+}
 //
 //const curTime = Date.now();
 //const tenAhead = curTime + 1000000;
@@ -36,6 +40,19 @@ function countdown( elementName, minutes, seconds )
     updateTimer();
 }
 
-countdown( "ten-countdown", 10, 0 );
+const progressLoad = () => {
+    const element = document.querySelector(".progress-bar");
+    console.log(element);
+    let width = 100;
+    let aThing = setInterval(() => {
+        if (width <= 0) {
+            clearInterval(id);
+          } else {
+            width--;
+            element.style.width = width + "%";
+          }
+    }, 5000)
+}
 
-// startTimer();
+countdown( "ten-countdown", 10, 0 );
+progressLoad();

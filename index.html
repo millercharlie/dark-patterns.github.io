@@ -2,42 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
-    <title>Dark Patterns</title>
+    <title>Dark Patterns Article</title>
 </head>
 <body class="body">
 <div class="sale-container">
     <img class="sale-close-icon" src="assets/close-icon.svg" alt="Extraordinarily Faint Close Icon" onclick="closeElement('.sale-container')" />
     <div class="sale-text">
         <h3 class="sale-message">HURRY! Buy a subscription now! Sale ends in:</h3>
-        <h2 class="sale-timer" id="sale-timer">10:00 min</h2> <!-- timer connects with JavaScript -->
+        <h2 class="sale-timer" id="sale-timer">10:00 min</h2>
     </div>
-    <!--<div class="progress-bar"></div>-->
+    <progress class="progress-bar" value="100"></progress>
 </div>
-<!--<div class="chat-container">-->
-<!--    <div class="chat-popup">-->
-<!--        <p>Hey there! 👋&nbsp;Would you like to download our audio version of this article?</p>-->
-<!--        <div>-->
-<!--            <button class="cancel-btn">Cancel</button>-->
-<!--            <button class="download-btn">Download</button>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="chat-icon">-->
-<!--        <img class="chat-img" src="assets/chat-icon.svg" alt="Chat Icon" />-->
-<!--    </div>-->
-<!--</div>-->
 <div class="cookie-container">
     <h2 class="cookie-title">Would you like to disable cookies?</h2>
     <div class="side-btns">
-        <p class="cookie-refuse"><u>Yes. Show me how.</u></p>
+        <p class="cookie-refuse" onClick="openElement('.cookie-secondary-container'); closeElement('.cookie-container')"><u>Yes. Show me how.</u></p>
         <button class="cookie-allow" onclick="closeElement('.cookie-container')">Allow All</button>
     </div>
+</div>
+<div class="cookie-secondary-container">
+    <h2>Please select all cookies you wish to enable.</h2>
+    <ul >
+        <li>
+            <input type="checkbox" id="1"  disabled checked />
+            <label for="1">Functional (Required)<br/></label>
+        </li>
+            <li>
+                <input type="checkbox" id="2" checked />
+                <label for="2">Ad Targeting<br/></label>
+            </li>
+            <li>
+                <input type="checkbox" id="3" checked />
+                <label for="3">Snickerdoodle<br/></label>
+            </li>
+            <li>
+                <input type="checkbox" id="4" checked />
+                <label for="4">Kinda just want to see your activity tbh<br/></label>
+            </li>
+            <li>
+                <input type="checkbox" id="5" checked />
+                <label for="5">too bad there aren’t any vegan options<br/></label>
+            </li>
+            <li>
+                <input type="checkbox" id="6" checked />
+                <label for="6">nooo don’t disable this oneee<br/></label>
+            </li>
+            <li>
+                <input type="checkbox" id="7" checked />
+                <label for="7">pick me!<br/></label>
+            </li>
+    </ul>
+    <button class="cookie-allow" onClick="closeElement('.cookie-secondary-container')">Done</button>
 </div>
 <div class="popup-container">
     <p class="comic-sans-lmao">Do you want to continue reading and access two more articles for free?</p>
@@ -49,17 +71,17 @@
 <!--<div class="ad-container">-->
 <!--    <img class="ad-img" src="assets/ad.png" alt="Fake Advertisement" />-->
 <!--</div>-->
-<!--<div class="popup-container low">-->
-<!--    <p class="comic-sans-lmao">Hello stranger! We just released an email list. Would you like to join the list and gain access to exclusive content?</p>-->
-<!--    <div class="side-btns">-->
-<!--        <button class="cancel-btn">No. I won’t not refrain from not subscribing to this email list</button>-->
-<!--        <button class="download-btn">Yes. I’d would not love to not sign up never.</button>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="popup-container low">
+    <p class="comic-sans-lmao">Hello stranger! We just released an email list. Would you like to join the list and gain access to exclusive content?</p>
+    <div class="side-btns-nogap">
+        <button class="cancel-btn-dark" onClick="closeElement('.low')">No. I won’t not refrain from not subscribing to this email list</button>
+        <button class="download-btn" onClick="closeElement('.low')">Yes. I’d would not love to not sign up never.</button>
+    </div>
+</div>
 <div class="article-container">
     <h1><i>The Psychological Manipulation of Dark Patterns</i></h1>
-    <!--<img src="dark-patterns.png" alt="Dark Patterns Logo" />-->
-    <!--<h6 class="caption">Caption for image</h6>-->
+    <img src="assets/dark-patterns.png" class="header-img" alt="Dark Patterns Logo" />
+    <h6>Image Credit: Toptal Designers</h6>
     <h4>By Charlie Miller</h4>
     <p class="article-text">
         There are over 1.1 billion websites on the Internet. Assuming website creators wish to monetize their platform, the attention of any viewers suddenly has a monetary value, as competition for it is fierce. Some platforms, such as Instagram and TikTok have chosen to develop costly machine learning algorithms to retain the attention of users on their platform for more ad impressions. Other developers who rely on subscriptions may choose a more nefarious solution to this problem. They use dark patterns, which are user interface elements that are intentionally designed to psychologically manipulate users into performing particular actions on a platform. But what forms can these “patterns” take? How can you recognize these UI elements and combat them? Here, we’ll highlight specific dark patterns to equip you with the tools to recognize and fight against them.
