@@ -16,6 +16,7 @@
 .article-text {
     text-align: left;
     white-space: pre-line;
+    margin-top: -30px;
 }
 
 /* Dark Pattern Styles */
@@ -86,7 +87,7 @@
     width: 40%;
     border-radius: 12px;
     position: absolute;
-    top: 80%;
+    top: 120%;
     left: 27%;
     padding: 20px;
     background-color: #D9D9D9;
@@ -154,7 +155,7 @@
 }
 
 .low {
-    top: 160%;
+    top: 250%;
 }
 
 h1 {
@@ -172,6 +173,7 @@ h6 {
     font-family: Avenir, "Times New Roman", sans-serif;
     color: #958177;
     text-align: left;
+    margin-top: 5px;
 }
 
 p {

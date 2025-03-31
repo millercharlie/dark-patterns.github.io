@@ -68,9 +68,6 @@
         <button class="download-btn" onClick="closeElement('.popup-container')">Yes! I love free stuff!</button>
     </div>
 </div>
-<!--<div class="ad-container">-->
-<!--    <img class="ad-img" src="assets/ad.png" alt="Fake Advertisement" />-->
-<!--</div>-->
 <div class="popup-container low">
     <p class="comic-sans-lmao">Hello stranger! We just released an email list. Would you like to join the list and gain access to exclusive content?</p>
     <div class="side-btns-nogap">
@@ -86,29 +83,46 @@
     <p class="article-text">
         There are over 1.1 billion websites on the Internet. Assuming website creators wish to monetize their platform, the attention of any viewers suddenly has a monetary value, as competition for it is fierce. Some platforms, such as Instagram and TikTok have chosen to develop costly machine learning algorithms to retain the attention of users on their platform for more ad impressions. Other developers who rely on subscriptions may choose a more nefarious solution to this problem. They use dark patterns, which are user interface elements that are intentionally designed to psychologically manipulate users into performing particular actions on a platform. But what forms can these “patterns” take? How can you recognize these UI elements and combat them? Here, we’ll highlight specific dark patterns to equip you with the tools to recognize and fight against them.
 
-Dark patterns take many shapes, but there are a few categories of general patterns that unethical designers will employ in their products. One such example is “confirmshaming”. This is the practice of designers deceptively guilting the user out of confirming an action that goes against the platform’s intent. For instance, when opting out of email subscriptions, a company that relies on such subscriptions may try to prevent users from unsubscribing by mentioning how many deals they’re missing out on by leaving. This can have the effect of manipulating users into retaining their subscription when they otherwise would not have.
+        Dark patterns take many shapes, but there are a few categories of general patterns that unethical designers will employ in their products. One such example is “confirmshaming”. This is the practice of designers deceptively guilting the user out of confirming an action that goes against the platform’s intent. For instance, when opting out of email subscriptions, a company that relies on such subscriptions may try to prevent users from unsubscribing by mentioning how many deals they’re missing out on by leaving. This can have the effect of manipulating users into retaining their subscription when they otherwise would not have.
+    </p>
+    <img src="assets/confirmshaming.png" alt="Confirmshaming Example" class="header-img" />
+    <h6>"Confirmshaming" in practice by Michaels. Here, they try to guilt the user into retaining their email subscription using certain messaging.</h6>
+    <p class="article-text">
+        Another dark pattern is “digital nudging”, although I concede this is a very general category that can apply to many dark patterns. Digital nudging employs UI elements to subtly convince users to perform desirable actions on a platform. One such example could be websites that have an extremely large and bold “download” button while the “cancel” button is more hidden in a smaller font. Users’ eyes would be immediately drawn to the “download” button, which may subtly convince them to download the item. Another would be social proof, or the usage of a bandwagon effect to convince users to proceed with an action.
 
-Another dark pattern is “digital nudging”, although I concede this is a very general category that can apply to many dark patterns. Digital nudging employs UI elements to subtly convince users to perform desirable actions on a platform. One such example could be websites that have an extremely large and bold “download” button while the “cancel” button is more hidden in a smaller font. Users’ eyes would be immediately drawn to the “download” button, which may subtly convince them to download the item. Another would be social proof, or the usage of a bandwagon effect to convince users to proceed with an action.
+        It’s important to note that dark patterns have varying levels of effectiveness. Based on experiments run by <a href="https://academic.oup.com/jla/article/13/1/43/6180579">Jamie Luguri and Lior Jacob Strahilevitz</a>, hidden information, social proof, and trick questions were effective in guiding consumer behavior.
+    </p>
+    <img src="assets/acceptance.png" alt="User Acceptance Chart" class="header-img" />
+    <h6>Users were asked by a program in a study about dark patterns to accept or deny a prompt. This chart shows effective each dark pattern was at guiding the users towards an acceptance of the prompt.</h6>
+<p class="article-text">
+        Dark patterns have also been proven to be effective manipulators across cultures and countries. In a piece entitled <a href="https://www.tandfonline.com/doi/full/10.1080/15332861.2024.2403054">“Investigating Dark Patterns on Social Media: Implications for User Engagement and Impulse Buying Behavior”</a>, Reem Rafiq Al-Tabakhi, Mohammad Hamdi Al Khasawneh & Ala’ Omar Dandis describe dark patterns through a primarily Middle Eastern lens, arguing that they impact user behavior regardless of cultural differences. While the authors here engaged with the specific effect of impulse buying, their findings can be extrapolated to include other impacts of dark pattern usage, such as increased engagement and breakdowns in brand perception.
 
-It’s important to note that dark patterns have varying levels of effectiveness. Based on experiments run by <a href="https://academic.oup.com/jla/article/13/1/43/6180579">Jamie Luguri and Lior Jacob Strahilevitz</a>, hidden information, social proof, and trick questions were effective in guiding consumer behavior.
+        With these specific examples, hopefully it is more clear to you what dark patterns generally do. In fact, this article has some dark patterns scattered throughout. Some are extremely obvious, while others are more subtle. After we discuss how to be alert for dark patterns on the Internet, I’ll reveal all the patterns that are present here. See how many you can find on your own!
 
-With these specific examples, hopefully it is more clear to you what dark patterns generally do. In fact, this article has some dark patterns scattered throughout. Some are extremely obvious, while others are more subtle. After we discuss how to be alert for dark patterns on the Internet, I’ll reveal all the patterns that are present here. See how many you can find on your own!
+        To act against dark patterns, education and wariness is important. In general, it is good practice to be wary of user interface elements that try to immediately attract your attention above everything else on a platform. This is generally a sign that a dark pattern is being implemented. In addition, if you notice any UI elements that try to put you into more of a panic, or try to get you to impulsively do or buy something, it's important to step back and acknowledge the ulterior motives of the web developer. Sometimes, websites will have banners declaring “flash sales” of 60% off that appear to end in 15 minutes, but refreshing the page may yield that the countdown resets. This is a good sign that the designer intentionally wishes for users to impulsively buy the company’s product.
 
-To act against dark patterns, education and wariness is important. In general, it is good practice to be wary of user interface elements that try to immediately attract your attention above everything else on a platform. This is generally a sign that a dark pattern is being implemented. In addition, if you notice any UI elements that try to put you into more of a panic, or try to get you to impulsively do or buy something, it's important to step back and acknowledge the ulterior motives of the web developer. Sometimes, websites will have banners declaring “flash sales” of 60% off that appear to end in 15 minutes, but refreshing the page may yield that the countdown resets. This is a good sign that the designer intentionally wishes for users to impulsively buy the company’s product.
+        Aside from personal responsibility, I do want to mention that dark patterns have been caught in the winds of congressional legislators. Particularly in the United States, <a href="https://www.ftc.gov/news-events/news/press-releases/2021/10/ftc-ramp-enforcement-against-illegal-dark-patterns-trick-or-trap-consumers-subscriptions">the FTC has committed to ramping up efforts to mitigate dark patterns via way of legal action and regulations</a>. If you wish to rid the Internet of dark patterns altogether, it could be a step to call or contact your local representative and bring them your concerns about the practice.
 
-Ultimately, though, I do admit it is extremely difficult to be wary of all dark patterns. Some can be very obvious, such as those flash sale banners I mentioned earlier. Others, such as checkboxes having pre-selected options that favor the company, are much more subtle and clever. I do hope though that you are more aware of a few forms these elements can take, and I hope you can explore the Internet safely without inadvertently submitting to a web platform’s desire for your attention and money.
-
-Now, though, I’ll list all the dark patterns I have built into this webpage. Some elements will have multiple dark patterns each. See how many you noticed!
+        Ultimately, though, I do admit it is extremely difficult to be wary of all dark patterns. Some can be very obvious, such as those flash sale banners I mentioned earlier. Others, such as checkboxes having pre-selected options that favor the company, are much more subtle and clever. I do hope though that you are more aware of a few forms these elements can take, and I hope you can explore the Internet safely without inadvertently submitting to a web platform’s desire for your attention and money. Now, though, I’ll list all the dark patterns I have built into this webpage. Some elements will have multiple dark patterns each. See how many you noticed!
 </p>
 <h4>“Sale” Banner</h4>
-<p class="article-text">This element proclaims a sale is ending in 10 minutes and urges the user to act quickly, but is a complete lie. Refreshing the page will reset the countdown.
-A small yellow “X” button is visible, but it is very small and blends in with the background of the banner, making it difficult to remove</p>
+<p class="article-text">
+    This element proclaims a sale is ending in 10 minutes and urges the user to act quickly, but is a complete lie. Refreshing the page will reset the countdown.
+A small yellow “X” button is visible, but it is very small and blends in with the background of the banner, making it difficult to remove
+</p>
 <h4>Cookie Popup</h4>
-<p class="article-text">This dark pattern is more subtle, since many websites employ cookie popups to allow users to customize their cookie count. In this instance, the “Allow All” button is much larger and more bold than the “Yes. Show me how.” button.When you click into the “Yes. Show me how.” button, a long list of cookies are displayed to the user, intentionally trying to overwhelm them with choices. While most in this case are nonsense, companies may be more clever about how they choose to implement this. An extremely subtle dark pattern is also present, being that every single option is automatically pre-selected by default, forcing the user to manually uncheck each option if they wish to save their cookie preferences.</p>
+<p class="article-text">
+    This dark pattern is more subtle, since many websites employ cookie popups to allow users to customize their cookie count. In this instance, the “Allow All” button is much larger and more bold than the “Yes. Show me how.” button.
+
+    When you click into the “Yes. Show me how.” button, a long list of cookies are displayed to the user, intentionally trying to overwhelm them with choices. While most in this case are nonsense, companies may be more clever about how they choose to implement this. An extremely subtle dark pattern is also present, being that every single option is automatically pre-selected by default, forcing the user to manually uncheck each option if they wish to save their cookie preferences.
+</p>
 <h4>"Continue Reading" Button</h4>
-<p class="article-text">This employs a similar dark pattern to the cookie popup, where the “Yes! I love free stuff!” button is more bold than the alternative.
-However, this popup includes “digital nudging” by the messages in each button. They are intended to nudge the user into confirming this action. On this particular page, both buttons do the same thing and close the popup, but real websites will not do this.
-It's important to note as well that confirmshaming is a key component of this instance of digital nudging. Here, the popup tries to guilt the user out of saying no by tying the message with hating puppies.
+<p class="article-text">
+    This employs a similar dark pattern to the cookie popup, where the “Yes! I love free stuff!” button is more bold than the alternative. However, this popup includes “digital nudging” by the messages in each button. They are intended to nudge the user into confirming this action. On this particular page, both buttons do the same thing and close the popup, but real websites will not do this. It's important to note as well that confirmshaming is a key component of this instance of digital nudging. Here, the popup tries to guilt the user out of saying no by tying the message with hating puppies.
+</p>
+<h4>"Email List" Popup</h4>
+<p class="article-text">
+    This popup uses a different dark pattern from the other popups described here. The text doesn’t try to draw the user’s attention, but is instead deliberately confusing. This text tries to trick the user into accidentally enrolling in the website’s fake email list.
 </p>
 </div>
 </body>
